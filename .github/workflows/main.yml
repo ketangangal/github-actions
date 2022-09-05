@@ -21,5 +21,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: python app.py
+      - name: Running python script
+        with:
+          python-version: 3.8
+          run: python app.py
